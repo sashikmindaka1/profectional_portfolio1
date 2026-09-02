@@ -1,8 +1,8 @@
-
+import Navbar from "./components/Navbar"
 
 function App() {
   return(
-    <button className='bg-blue-500 text-white border-5 border-amber-300'>login</button>
+   <Navbar/>
   )
 }
 
