@@ -1,14 +1,12 @@
 import React from 'react'
-import myimg from 
+import myimg1 from '../assests/myimg1.jpg';
+
 
 export default function Hero() {
   return (
     <section>
-      <div>
-        <img src="" alt="" />
-      </div>
-      <div>
-        Sashik Mindaka
+      <div className='p-7'>
+        <img src={myimg1} alt="my image 1" />
       </div>
     </section>
   )
