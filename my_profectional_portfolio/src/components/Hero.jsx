@@ -7,11 +7,19 @@ export default function Hero() {
     <section className='bg-[#040811]'>
 
       <div className='w-64 mx-auto lg:w-1/2'>
+
+      <dev className='text-white text-8xl'>
+        <p>I solve problems. </p>
+        <p>I craft digital experiences.</p>
+        <p>I think like an engineer.</p>
+        
+      </dev>
+
     <img 
       src={myimg1} 
       alt="my image 1" 
       
-      className='ml-100 mb-20 w-full h-auto object-cover rounded-2xl shadow-lg' 
+      className='ml-120 mb-80 w-full h-auto object-cover rounded-2xl shadow-lg' 
     />
   </div>
 
