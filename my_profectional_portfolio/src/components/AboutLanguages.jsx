@@ -23,7 +23,7 @@ export default function AboutLanguages() {
 
             <div>
 
-              <span className='flex gap-4'>
+              <span className='flex gap-4 lg:mt-15 lg:mr-30'>
 
                   <button  className='border-2 bg-amber-50 rounded-4xl px-4 py-1 hover:bg-blue-950 hover:text-amber-50 transition-colors duration-300 '>  React  </button>
                   <button  className='border-2 bg-amber-50 rounded-4xl px-6 py-1 hover:bg-blue-950 hover:text-amber-50 transition-colors duration-300'>vite</button>
