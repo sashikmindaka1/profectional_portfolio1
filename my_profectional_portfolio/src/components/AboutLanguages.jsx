@@ -25,10 +25,10 @@ export default function AboutLanguages() {
 
               <span className='flex gap-4 lg:mt-15 lg:mr-30'>
 
-                  <button  className='border-2 bg-amber-50 rounded-4xl px-4 py-1 hover:bg-blue-950 hover:text-amber-50 transition-colors duration-300 '>  React  </button>
-                  <button  className='border-2 bg-amber-50 rounded-4xl px-6 py-1 hover:bg-blue-950 hover:text-amber-50 transition-colors duration-300'>vite</button>
-                  <button className='border-2 bg-amber-50 rounded-4xl px-4 py-1 hover:bg-blue-950 hover:text-amber-50 transition-colors duration-300'>tailwind css</button>
-                  <button className='border-2 bg-amber-50 rounded-4xl px-6 py-1 hover:bg-blue-950 hover:text-amber-50 transition-colors duration-300'>next Js</button>
+                  <button  className='border-2 bg-amber-50 rounded-full px-2 py-1 lg:px-6 lg:py-2 hover:bg-blue-950 hover:text-amber-50 transition-colors duration-300 '>  React  </button>
+                  <button  className='border-2 bg-amber-50 rounded-full px-2 py-1 lg:px-6 lg:py-2 hover:bg-blue-950 hover:text-amber-50 transition-colors duration-300 '>vite</button>
+                  <button className='border-2 bg-amber-50 rounded-full px-2 py-1 lg:px-6 lg:py-2 hover:bg-blue-950 hover:text-amber-50 transition-colors duration-300 '>tailwind css</button>
+                  <button className='border-2 bg-amber-50 rounded-full px-2 py-1 lg:px-6 lg:py-2 hover:bg-blue-950 hover:text-amber-50 transition-colors duration-300 '>next Js</button>
             </span>
           
 
