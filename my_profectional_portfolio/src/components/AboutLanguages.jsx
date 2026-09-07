@@ -7,7 +7,7 @@ export default function AboutLanguages() {
         <h1>
           <span className='text-8xl font-sans font-black tracking-tighter'>WHAT I WORK WITH</span>
           
-          <span>// LANGUAGES AND TOOLS</span>
+          <span >// LANGUAGES AND TOOLS</span>
           
           </h1>
       </div>
