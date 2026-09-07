@@ -11,7 +11,7 @@ export default function ManifestoSection() {
         <p className='text-xs sm:text-sm lg:text-base leading-relaxed mb-6  text-amber-50' >// FULLSTACK ENGINEER</p>
 
 
-        <h1 className='font-sans font-black tracking-tighter text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl text-amber-50 mt-4'>
+        <h1 className='font-sans font-black tracking-tighter text-5xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl text-amber-50 mt-4'>
 
           <span>I BUILD</span>
           <span className='text-[#0B0C0A] bg-[#d4ff33] px-4 py-1 lg:px-6 lg:py-2 inline-block'>FRONT.</span>
