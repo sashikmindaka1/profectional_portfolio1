@@ -11,7 +11,7 @@ export default function ManifestoSection() {
         </p>
 
         {/* අකුරු සයිස් එක පියවර 5කින් වෙනස් වෙනවා (4xl ඉඳන් 9xl වෙනකන්) */}
-        <h1 className='font-sans font-black tracking-tighter text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-9xl text-amber-50 mt-4'>
+        <h1 className='font-sans font-black tracking-tighter text-4xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-9xl text-amber-50 mt-4'>
           <span className='block md:inline'>I BUILD </span>
           <span className='text-[#0B0C0A] bg-[#d4ff33] px-3 py-1 md:px-5 md:py-2 inline-block mt-2 md:mt-0'>FRONT.</span>
         </h1>
