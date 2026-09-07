@@ -11,12 +11,17 @@ export default function HeroSection() {
         
    
         <div className='w-full lg:w-1/2'>
-          <h1 className='black-ops-one-regular tracking-wide text-white text-4xl lg:text-8xl leading-tight'>
+          <h1 className='font-["Black_Ops_One"] text-white text-4xl lg:text-8xl leading-tight'>
             I solve problems. <br />
             I craft digital <br />
             experiences. <br />
-            I think like an <br />
-            engineer.
+            <br/>
+
+
+            <div className='text-amber-700'>
+              Sashik mindaka <br/> 
+            </div>
+            
           </h1>
         </div>
 
