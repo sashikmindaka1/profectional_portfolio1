@@ -5,7 +5,7 @@ export default function AboutLanguages() {
     <section className='bg-amber-100'> 
       <div className='justify-between'>
         <h1>
-          <span className='text-8xl font-sans font-black tracking-tighter'>WHAT I WORK WITH</span>
+          <span className='font-sans font-black tracking-tighter text-5xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl text-black mt-4'>WHAT I WORK WITH</span>
           
           <span >// LANGUAGES AND TOOLS</span>
           </h1>
@@ -17,7 +17,7 @@ export default function AboutLanguages() {
               <span className=' font-sans font-black tracking-tighter text-2xl sm:text-2xl md:text-5xl lg:text-5xl xl:text-5xl text-black mt-4'>01</span>
             <span className='font-sans font-black tracking-tighter text-5xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl text-black mt-4'>FRONTEND</span>
 
-            <p>Crafting fast, responsive, and dynamic user interfaces. Highly familiar with the React and Vite ecosystems.</p>
+            <p className='text-black font-mono text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl leading-relaxed text-left max-w-4xl pt-10 md:pt-5 pl-13'>Crafting fast, responsive, and dynamic user interfaces. Highly familiar with the React and Vite ecosystems.</p>
 
             </div>
 
