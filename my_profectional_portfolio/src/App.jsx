@@ -7,7 +7,7 @@ function App() {
   return(
     <>
    <Navbar/>
-   <Hero/>
+   
    <ManifestoSection />
    <AboutLanguages />
    </>
