@@ -2,7 +2,7 @@ import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
 import ManifestoSection from "./components/ManifestoSection"  
 import AboutLanguages from "./components/AboutLanguages" 
-import Featured from "./components/featured"
+import Featured from "./components/Featured"
 
 function App() {
   return(
