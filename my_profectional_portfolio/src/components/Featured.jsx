@@ -21,153 +21,164 @@ export default function Featured() {
           <h1 className='mt-10 text-amber-200'>// CREATIVE BUILD SHOWCASE</h1>
 
 
-      <div className='grid grid-cols-[1fr_10%_1fr] '>
-        <div className='text-amber-50'>
-          <div className='grid grid-cols-[1fr_3%_1fr]'>
-           {/* frist grid */}
+      <div className='grid grid-cols-[1fr_10%_1fr]  '>
+       <div className="text-amber-50 border border-dashed border-gray-700 p-4 sm:p-6 md:p-8 rounded-2xl">
+  {/* Mobile 1 Column, Desktop 3-Column layout */}
+  <div className="grid grid-cols-1 md:grid-cols-[1fr_3%_1fr] gap-6 md:gap-0">
+    
+    {/* FIRST COLUMN: Title & Image */}
+    <div className="flex flex-col justify-between">
+      <div>
+        <p className="font-sans font-black tracking-tighter text-4xl sm:text-5xl lg:text-6xl text-amber-50">
+          01
+        </p>
+        <p className="font-sans font-black tracking-tighter text-3xl sm:text-4xl lg:text-5xl text-amber-50 mt-2">
+          TRAVELMANIA
+        </p>
+      </div>
 
-            <div>
-              <p className='font-sans font-black tracking-tighter text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-amber-50 mt-4'>01</p>
-              <p className='font-sans font-black tracking-tighter text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl text-amber-50 mt-4'>TRAVELMANIA</p>
+      <img
+        className="mt-6 w-full rounded-xl object-cover shadow-lg"
+        src={Travelmaniap}
+        alt="travelmania project"
+      />
+    </div>
 
-              <img className='mt-6 md:mt-8 w-full '
-                src={Travelmaniap} 
-                alt="travelmania project" />
+    {/* SECOND COLUMN: Spacing ( not showing Mobile) */}
+    <div className="hidden md:block">
+      {/* Empty div for spacing in 3-column layout */}
+    </div>
 
-            </div>
+    {/* THIRD COLUMN: Details & Buttons */}
+    <div className="flex flex-col justify-between mt-4 md:mt-0">
+      <div>
+        <button className="text-black bg-[#d4ff33] font-mono font-bold text-xs rounded-xl py-1 px-3">
+          [UNDEPLOYED]
+        </button>
 
+        <p className="font-mono font-bold tracking-tight text-lg sm:text-xl text-amber-50 mt-4">
+          Travel Management Platform
+        </p>
+        <p className="font-mono font-bold tracking-tight text-base sm:text-lg text-amber-100/70 mt-1">
+          Fullstack WEB Platform /
+        </p>
 
+        <p className="font-mono text-sm sm:text-base text-gray-300 mt-6 leading-relaxed">
+          A full-stack solution for fragmented travel experiences.
+        </p>
 
-
-
-
-            <div>
-              {/* this is empty div , this div add for spacing 2nd colspan */}
-            </div>
-
-
-
-
-            <div>
-              <button className='text-black bg-[#d4ff33] rounded-xl py-1 px-1'>[UNDIPLOYED]</button>
-
-              <p className='font-mono font-black tracking-tighter text-1xl sm:text-1xl md:text-1xl lg:text-2xl xl:text-2xl text-amber-50 mt-4'>Travel Management Platform</p>
-              <p className='font-mono font-black tracking-tighter text-1xl sm:text-1xl md:text-1xl lg:text-2xl xl:text-2xl text-amber-50 mt-7'>Fullstack WEB Platform /</p>
-
-              <p className='font-mono font-black tracking-tighter text-1xl sm:text-1xl md:text-1xl lg:text-1xl xl:text-1xl text-amber-50 mt-14'>A full-Stack solution for fragmented travel experience</p>
-
-
-              <div className='grid grid-cols-3 gap-4 mt-4'>
-                <button className='text-black bg-[#d4ff33] rounded-xl py-1 px-1'>React</button>
-              <button className='text-black bg-[#d4ff33] rounded-xl py-1 px-1'>Springboot</button>
-              <button className='text-black bg-[#d4ff33] rounded-xl py-1 px-1'>prostate sql</button>
-              <button className='text-black bg-[#d4ff33] rounded-xl py-1 px-1'>Rest Api</button>
-
-              </div>
-
-              <div className='grid grid-cols-2 gap-5'>
-                <button className='text-[#FF0000] bg-[#000000]  border-2 rounded-xl hover:text-black hover:bg-[#FF0000] py-1 px-1 mt-8'>View in Github</button>
-
-                 <button className='text-[#4dff00] bg-[#000000]  border-2 rounded-xl hover:text-black hover:bg-[#4dff00] py-1 px-1 mt-8'>Live demo</button>
-              </div>
-
-
-              
-               
-              
-            </div>
-            
-
-
-
-
-
-
-
-          </div>
-          
+        {/* Tech Stack Badges */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-3 mt-6">
+          <button className="text-[#d4ff33] bg-[#0B0C0A] border border-[#d4ff33]/40 rounded-xl py-1.5 px-2 text-xs font-mono hover:text-black hover:bg-[#d4ff33] transition-all">
+            React
+          </button>
+          <button className="text-[#d4ff33] bg-[#0B0C0A] border border-[#d4ff33]/40 rounded-xl py-1.5 px-2 text-xs font-mono hover:text-black hover:bg-[#d4ff33] transition-all">
+            Spring Boot
+          </button>
+          <button className="text-[#d4ff33] bg-[#0B0C0A] border border-[#d4ff33]/40 rounded-xl py-1.5 px-2 text-xs font-mono hover:text-black hover:bg-[#d4ff33] transition-all">
+            PostgreSQL
+          </button>
+          <button className="text-[#d4ff33] bg-[#0B0C0A] border border-[#d4ff33]/40 rounded-xl py-1.5 px-2 text-xs font-mono hover:text-black hover:bg-[#d4ff33] transition-all">
+            REST API
+          </button>
         </div>
+      </div>
 
+      {/* Action Buttons */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mt-8">
+        <button className="text-[#FF4D4D] bg-black border border-[#FF4D4D] font-mono font-bold text-sm rounded-xl hover:text-black hover:bg-[#FF4D4D] py-2 px-3 transition-all">
+          View in Github
+        </button>
+
+        <button className="text-[#4dff00] bg-black border border-[#4dff00] font-mono font-bold text-sm rounded-xl hover:text-black hover:bg-[#4dff00] py-2 px-3 transition-all">
+          Live Demo
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 
 
         <div className='text-amber-50'></div>
-        <div className='text-amber-50'>
-          <div className='grid grid-cols-[1fr_3%_1fr]'>
-           {/* frist grid */}
-
-            <div>
-              <p className='font-sans font-black tracking-tighter text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-amber-50 mt-4'>01</p>
-              <p className='font-sans font-black tracking-tighter text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl text-amber-50 mt-4'>TRAVELMANIA</p>
-
-              <img className='mt-6 md:mt-8 w-full '
-                src={Travelmaniap} 
-                alt="travelmania project" />
-
-            </div>
-
-
-
-
-
-
-            <div>
-              {/* this is empty div , this div add for spacing 2nd colspan */}
-            </div>
-
-
-
-
-            <div>
-              <button className='text-black bg-[#d4ff33] rounded-xl py-1 px-1'>[UNDIPLOYED]</button>
-
-              <p className='font-mono font-black tracking-tighter text-1xl sm:text-1xl md:text-1xl lg:text-2xl xl:text-2xl text-amber-50 mt-4'>Travel Management Platform</p>
-              <p className='font-mono font-black tracking-tighter text-1xl sm:text-1xl md:text-1xl lg:text-2xl xl:text-2xl text-amber-50 mt-7'>Fullstack WEB Platform /</p>
-
-              <p className='font-mono font-black tracking-tighter text-1xl sm:text-1xl md:text-1xl lg:text-1xl xl:text-1xl text-amber-50 mt-14'>A full-Stack solution for fragmented travel experience</p>
-
-
-              <div className='grid grid-cols-3 gap-4 mt-4'>
-                <button className='text-black bg-[#d4ff33] rounded-xl py-1 px-1'>React</button>
-              <button className='text-black bg-[#d4ff33] rounded-xl py-1 px-1'>Springboot</button>
-              <button className='text-black bg-[#d4ff33] rounded-xl py-1 px-1'>prostate sql</button>
-              <button className='text-black bg-[#d4ff33] rounded-xl py-1 px-1'>Rest Api</button>
-
-              </div>
-
-              <div className='grid grid-cols-2 gap-5'>
-                <button className='text-[#FF0000] bg-[#000000]  border-2 rounded-xl hover:text-black hover:bg-[#FF0000] py-1 px-1 mt-8'>View in Github</button>
-
-                 <button className='text-[#4dff00] bg-[#000000]  border-2 rounded-xl hover:text-black hover:bg-[#4dff00] py-1 px-1 mt-8'>Live demo</button>
-              </div>
-
-
-              
-               
-              
-            </div>
-            
-
-
-
-
-
-
-
-          </div>
-          
-        </div>
-        <div className='text-amber-50'>04</div>
-       
-
-
-        
-       
-
+    <div className="text-amber-50 border border-dashed border-gray-700 p-4 sm:p-6 md:p-8 rounded-2xl">
+  {/* Mobile  1 Column, Desktop  3-Column layout */}
+  <div className="grid grid-cols-1 md:grid-cols-[1fr_3%_1fr] gap-6 md:gap-0">
+    
+    {/* FIRST COLUMN: Title & Image */}
+    <div className="flex flex-col justify-between">
+      <div>
+        <p className="font-sans font-black tracking-tighter text-4xl sm:text-5xl lg:text-6xl text-amber-50">
+          01
+        </p>
+        <p className="font-sans font-black tracking-tighter text-3xl sm:text-4xl lg:text-5xl text-amber-50 mt-2">
+          TRAVELMANIA
+        </p>
       </div>
-          
 
+      <img
+        className="mt-6 w-full rounded-xl object-cover shadow-lg"
+        src={Travelmaniap}
+        alt="travelmania project"
+      />
+    </div>
 
+    {/* SECOND COLUMN: Spacing (not showing Mobile) */}
+    <div className="hidden md:block">
+      {/* Empty div for spacing in 3-column layout */}
+    </div>
+
+    {/* THIRD COLUMN: Details & Buttons */}
+    <div className="flex flex-col justify-between mt-4 md:mt-0">
+      <div>
+        <button className="text-black bg-[#d4ff33] font-mono font-bold text-xs rounded-xl py-1 px-3">
+          [UNDEPLOYED]
+        </button>
+
+        <p className="font-mono font-bold tracking-tight text-lg sm:text-xl text-amber-50 mt-4">
+          Travel Management Platform
+        </p>
+        <p className="font-mono font-bold tracking-tight text-base sm:text-lg text-amber-100/70 mt-1">
+          Fullstack WEB Platform /
+        </p>
+
+        <p className="font-mono text-sm sm:text-base text-gray-300 mt-6 leading-relaxed">
+          A full-stack solution for fragmented travel experiences.
+        </p>
+
+        {/* Tech Stack Badges */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-3 mt-6">
+          <button className="text-[#d4ff33] bg-[#0B0C0A] border border-[#d4ff33]/40 rounded-xl py-1.5 px-2 text-xs font-mono hover:text-black hover:bg-[#d4ff33] transition-all">
+            React
+          </button>
+          <button className="text-[#d4ff33] bg-[#0B0C0A] border border-[#d4ff33]/40 rounded-xl py-1.5 px-2 text-xs font-mono hover:text-black hover:bg-[#d4ff33] transition-all">
+            Spring Boot
+          </button>
+          <button className="text-[#d4ff33] bg-[#0B0C0A] border border-[#d4ff33]/40 rounded-xl py-1.5 px-2 text-xs font-mono hover:text-black hover:bg-[#d4ff33] transition-all">
+            PostgreSQL
+          </button>
+          <button className="text-[#d4ff33] bg-[#0B0C0A] border border-[#d4ff33]/40 rounded-xl py-1.5 px-2 text-xs font-mono hover:text-black hover:bg-[#d4ff33] transition-all">
+            REST API
+          </button>
+        </div>
+      </div>
+
+      {/* Action Buttons */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mt-8">
+        <button className="text-[#FF4D4D] bg-black border border-[#FF4D4D] font-mono font-bold text-sm rounded-xl hover:text-black hover:bg-[#FF4D4D] py-2 px-3 transition-all">
+          View in Github
+        </button>
+
+        <button className="text-[#4dff00] bg-black border border-[#4dff00] font-mono font-bold text-sm rounded-xl hover:text-black hover:bg-[#4dff00] py-2 px-3 transition-all">
+          Live Demo
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>
+</ div>
 
 
 
