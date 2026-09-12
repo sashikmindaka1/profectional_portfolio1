@@ -120,13 +120,13 @@ export default function Certification() {
   ];
 
   return (
-    <section className="bg-[#0B0C0A] py-16 px-4 sm:px-8 md:px-12 xl:px-16 min-h-screen">
+    <section className="bg-gray-700 py-16 px-4 sm:px-8 md:px-12 xl:px-16 min-h-screen">
       {/* Header Section */}
       <div className="flex flex-wrap items-baseline gap-4 mb-12">
         <span className="font-sans font-black tracking-tighter text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-black bg-[#d4ff33] px-3">
           FEATURED.
         </span>
-        <span className="font-sans font-black tracking-tighter text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-amber-50">
+        <span className="font-sans font-black tracking-tighter text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-black">
           (CERTIFICATIONS SHOWCASE)
         </span>
       </div>
