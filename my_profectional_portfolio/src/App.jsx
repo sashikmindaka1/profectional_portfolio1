@@ -4,6 +4,7 @@ import ManifestoSection from "./components/ManifestoSection"
 import AboutLanguages from "./components/AboutLanguages" 
 import Certification from "./components/Certification"
 import Featured from "./components/featured"
+import Education from "./components/Education"
 
 function App() {
   return(
@@ -14,6 +15,7 @@ function App() {
    <AboutLanguages />
    <Featured />
    <Certification />
+   <Education />
    </>
   )
 }
