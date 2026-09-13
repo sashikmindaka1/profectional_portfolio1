@@ -3,7 +3,7 @@ import Hero from "./components/Hero"
 import ManifestoSection from "./components/ManifestoSection"  
 import AboutLanguages from "./components/AboutLanguages" 
 import Certification from "./components/Certification"
-import Featured from "./components/featured"
+import Projects from "./components/Projects"
 import Education from "./components/Education"
 import Footer from "./components/Footer"
 
@@ -14,7 +14,7 @@ function App() {
    
    <ManifestoSection />
    <AboutLanguages />
-   <Featured />
+   <Projects />
    <Certification />
    <Education />
    <Footer />
