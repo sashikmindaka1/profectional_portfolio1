@@ -8,7 +8,7 @@ const Footer = () => {
       
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 mb-16">
         
-        {/* 1. Brand & Info Section (ලොකු ඉඩක් ගන්නවා) */}
+
         <div className="md:col-span-5 flex flex-col gap-6">
           <div className="inline-block">
             <span className="font-sans font-black tracking-tighter text-4xl sm:text-5xl text-black bg-[#d4ff33] px-2 uppercase">
@@ -44,7 +44,7 @@ const Footer = () => {
           <div className="grid grid-cols-2 gap-3">
             
             <a 
-              href="https://github.com/yourusername" 
+              href="https://github.com/sashikmindaka1" 
               target="_blank" 
               rel="noreferrer"
               className="flex items-center justify-center gap-2 border border-gray-700 bg-[#111315] hover:bg-white hover:text-black hover:border-white transition-all py-3 rounded-lg font-mono font-bold text-sm"
@@ -54,7 +54,7 @@ const Footer = () => {
             </a>
 
             <a 
-              href="https://linkedin.com/in/yourusername" 
+              href="https://www.linkedin.com/in/sashik-mindaka-77593a364/" 
               target="_blank" 
               rel="noreferrer"
               className="flex items-center justify-center gap-2 border border-gray-700 bg-[#111315] hover:bg-[#0077b5] hover:text-white hover:border-[#0077b5] transition-all py-3 rounded-lg font-mono font-bold text-sm"
@@ -64,10 +64,10 @@ const Footer = () => {
             </a>
 
             <a 
-              href="mailto:youremail@example.com" 
+              href="https://mail.google.com/mail/u/1/#inbox?compose=new" 
               className="flex items-center justify-center gap-2 border border-gray-700 bg-[#111315] hover:bg-[#d4ff33] hover:text-black hover:border-[#d4ff33] transition-all py-3 rounded-lg font-mono font-bold text-sm col-span-2"
             >
-              {/* <FaEnvelope size={18} /> */}
+           
               SAY HELLO {'->'}
             </a>
 

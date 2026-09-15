@@ -1,5 +1,11 @@
 import React from "react";
 import ceteficate1 from "../assests/travelmaniap.jpeg"; 
+import { image } from "framer-motion/client";
+import ceteficateimg1 from "../assests/1755791632568.jpeg";
+import ceteficateimg2 from "../assests/cetimg2.jpeg";
+import ceteficateimg3 from "../assests/ceteimg3.jpg";
+import ceteficateimg4 from "../assests/1770061199018 (1).jpeg";
+
 const CertificateCard = ({
   id,
   title,
@@ -79,43 +85,43 @@ export default function Certification() {
   const CeteficateData = [
     {
       id: "01",
-      title: "ADVANCED REACT DEVELOPER",
-      image: ceteficate1,
-      issuedBy: "Google",
-      skillBadge: "Advanced React & State Management",
-      courseStatus: "Full Curriculum and Exam completed.",
-      viewLink: "#",
-      shareLink: "#",
+      title: "OCI 2025 AI Foundations Associate",
+      image: ceteficateimg1,
+      issuedBy: "Oracle",
+      skillBadge: "AI & ML Basics, Generative AI, OCI Services",
+      courseStatus: "Full Curriculum and Proctored Exam completed.",
+      viewLink: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=5534F0B37467CEEA077C85A39E4429A6E8BCFE6BF3CD5530E21839A8A77110D1",
+      shareLink: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=5534F0B37467CEEA077C85A39E4429A6E8BCFE6BF3CD5530E21839A8A77110D1",
     },
     {
       id: "02",
-      title: "GOOGLE CLOUD FOUNDATIONS",
-      image: ceteficate1,
+      title: "Crash Course on Python ",
+      image: ceteficateimg2,
       issuedBy: "Google",
-      skillBadge: "Cloud Infrastructure & Core Services",
-      courseStatus: "Full Curriculum and Exam completed.",
-      viewLink: "#",
-      shareLink: "#",
+      skillBadge: "Python Programming, Data Structures, Debugging, Scripting, Computational Thinking",
+      courseStatus: "Completed on October 30, 2025 (20 hours)",
+      viewLink: "https://www.coursera.org/account/accomplishments/verify/5OX6UI8MNA71",
+      shareLink: "https://www.coursera.org/account/accomplishments/verify/5OX6UI8MNA71",
     },
     {
       id: "03",
-      title: "UX/UI DESIGN SPECIALIZATION",
-      image: ceteficate1,
-      issuedBy: "Google",
-      skillBadge: "Wireframing & Prototyping",
-      courseStatus: "Full Curriculum and Exam completed.",
-      viewLink: "#",
-      shareLink: "#",
+      title: "Java Training Complete Course ",
+      image: ceteficateimg3,
+      issuedBy: "Udemy (Crunch Coding Institute)",
+      skillBadge: "Core Java, Object-Oriented Programming, Java Basics",
+      courseStatus: "Completed on Aug. 19, 2025 (4 total hours)",
+      viewLink: "https://www.udemy.com/certificate/UC-07211af2-a082-4cfe-a53a-c4af918dff4c/",
+      shareLink: "https://www.udemy.com/certificate/UC-07211af2-a082-4cfe-a53a-c4af918dff4c/",
     },
     {
       id: "04",
-      title: "SPRING BOOT MICROSERVICES",
-      image: ceteficate1,
-      issuedBy: "IBM",
-      skillBadge: "Backend API Development for Sashik Mindaka",
-      courseStatus: "Full Curriculum and Exam completed.",
-      viewLink: "#",
-      shareLink: "#",
+      title: "Career Skills in Software Development",
+      image: ceteficateimg4,
+      issuedBy: "LinkedIn Learning",
+      skillBadge: "Software Development, Career Management, Tech Career Skills",
+      courseStatus: "Completed on September 19, 2025 (2h 2m)",
+      viewLink: "https://www.linkedin.com/safety/go/?url=https%3A%2F%2Flnkd.in%2Fgv7FiRGv&urlhash=j_sb&mt=p1KazT87L6A3ZeJDCRsvG9j_ieKOBZhNX8YwtUQd1bYxb6ofO1DBSimsmEVKTRZdPxHaJfpV2Io6WMI8Xu4az3ZPflTm&isSdui=true&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3Bm8%2Bx%2FZMsT0S4%2BF0WsmHJ9Q%3D%3D",
+      shareLink: "https://www.linkedin.com/safety/go/?url=https%3A%2F%2Flnkd.in%2Fgv7FiRGv&urlhash=j_sb&mt=p1KazT87L6A3ZeJDCRsvG9j_ieKOBZhNX8YwtUQd1bYxb6ofO1DBSimsmEVKTRZdPxHaJfpV2Io6WMI8Xu4az3ZPflTm&isSdui=true&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3Bm8%2Bx%2FZMsT0S4%2BF0WsmHJ9Q%3D%3D",
     },
   ];
 

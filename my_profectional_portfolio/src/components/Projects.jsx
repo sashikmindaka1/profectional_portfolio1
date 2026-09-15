@@ -1,9 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Travelmaniap from '../assests/travelmaniap.jpeg';
+import { image } from 'framer-motion/client';
+import financialmanagementImg from '../assests/financialmanagementImg.png'
+import portfolioImg from '../assests/portfolioimg1.png'
 
 // Reusable Project Card Component with Framer Motion entry animation
-const ProjectCard = ({ id, title, category, type, description, techStack, githubLink, demoLink, index }) => {
+const ProjectCard = ({ id, title, category, type, description, image, techStack, githubLink, demoLink, index }) => {
   return (
     <motion.div 
       className="text-amber-50 border border-dashed border-gray-800 bg-[#0B0C0A] p-4 sm:p-6 md:p-8 rounded-2xl hover:border-[#d4ff33]/50 hover:bg-[#12151a] transition-all duration-300"
@@ -29,7 +32,7 @@ const ProjectCard = ({ id, title, category, type, description, techStack, github
 
           <img
             className="mt-6 w-full rounded-xl object-cover shadow-lg border border-gray-900"
-            src={Travelmaniap}
+            src={image}
             alt={`${title} showcase`}
           />
         </div>
@@ -104,40 +107,35 @@ export default function Featured() {
       category: "Travel Management Platform",
       type: "Fullstack WEB Platform",
       description: "A full-stack solution for fragmented travel experiences.",
+      image: Travelmaniap,
       techStack: ["React", "Spring Boot", "PostgreSQL", "REST API"],
-      githubLink: "#",
-      demoLink: "#"
+      githubLink: "https://github.com/sashikmindaka1/profectional_portfolio1",
+      demoLink: ""
     },
     {
       id: "02",
-      title: "TRAVELMANIA",
-      category: "Travel Management Platform",
-      type: "Fullstack WEB Platform",
-      description: "A full-stack solution for fragmented travel experiences.",
-      techStack: ["React", "Spring Boot", "PostgreSQL", "REST API"],
-      githubLink: "#",
-      demoLink: "#"
+      title: "SM FINANCIAL",
+      category: "Modern Financial Management System",
+      type: "Fullstack MERN Platform",
+      description: "A robust financial tracking platform built for seamless expense management, budgeting, and real-time transaction analytics.",
+      image: financialmanagementImg,
+      techStack: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
+      githubLink: "https://github.com/sashikmindaka1/MernFinancialTrackerApp",
+      demoLink: "https://mern-financial-tracker-app.vercel.app/"
     },
+
     {
       id: "03",
-      title: "PROJECT THREE",
-      category: "E-Commerce Solution",
-      type: "Fullstack Web App",
-      description: "Scalable web platform with real-time updates and seamless checkout.",
-      techStack: ["React", "Tailwind CSS", "Node.js", "MySQL"],
-      githubLink: "#",
-      demoLink: "#"
+      title: "MY PORTFOLIO",
+      category: "Personal Developer Portfolio",
+      type: "Frontend Web Application",
+      description: "A high-performance, responsive portfolio built to showcase modern software engineering projects, tech stacks, and academic milestones.",
+      image: portfolioImg,
+      techStack: ["React", "Tailwind CSS", "Framer Motion", "Vite"],
+      githubLink: "https://github.com/sashikmindaka1/profectional_portfolio1",
+      demoLink: "https://www.sashikmindaka.dev/"
     },
-    {
-      id: "04",
-      title: "PROJECT FOUR",
-      category: "Analytics Dashboard",
-      type: "Frontend Platform",
-      description: "High-performance dashboard rendering metrics and real-time visualization.",
-      techStack: ["React", "Tailwind CSS", "Chart.js", "REST API"],
-      githubLink: "#",
-      demoLink: "#"
-    }
+   
   ];
 
   return (
