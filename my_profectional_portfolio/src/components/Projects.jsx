@@ -1,10 +1,18 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import Travelmaniap from '../assests/travelmaniap.jpeg';
 
-// Reusable Project Card Component
-const ProjectCard = ({ id, title, category, type, description, techStack, githubLink, demoLink }) => {
+// Reusable Project Card Component with Framer Motion entry animation
+const ProjectCard = ({ id, title, category, type, description, techStack, githubLink, demoLink, index }) => {
   return (
-    <div className="text-amber-50 border border-dashed border-gray-800 bg-[#0B0C0A] p-4 sm:p-6 md:p-8 rounded-2xl hover:border-[#d4ff33]/50 hover:bg-[#12151a] transition-all duration-300">
+    <motion.div 
+      className="text-amber-50 border border-dashed border-gray-800 bg-[#0B0C0A] p-4 sm:p-6 md:p-8 rounded-2xl hover:border-[#d4ff33]/50 hover:bg-[#12151a] transition-all duration-300"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.1 }}
+      // Stagger animation effect based on the card index
+      transition={{ duration: 0.6, delay: index * 0.15, ease: "easeOut" }}
+    >
       {/* Responsive Grid: 1 Column on Mobile & Laptop, Split Layout on Large Displays */}
       <div className="grid grid-cols-1 xl:grid-cols-[1fr_4%_1fr] gap-6 xl:gap-0">
         
@@ -49,9 +57,9 @@ const ProjectCard = ({ id, title, category, type, description, techStack, github
 
             {/* Tech Stack Badges */}
             <div className="flex flex-wrap gap-2 mt-6">
-              {techStack.map((tech, index) => (
+              {techStack.map((tech, techIndex) => (
                 <span
-                  key={index}
+                  key={techIndex}
                   className="text-[#d4ff33] bg-[#0B0C0A] border border-[#d4ff33]/40 rounded-xl py-1.5 px-3 text-xs font-mono whitespace-nowrap hover:text-black hover:bg-[#d4ff33] transition-all cursor-default"
                 >
                   {tech}
@@ -83,7 +91,7 @@ const ProjectCard = ({ id, title, category, type, description, techStack, github
         </div>
 
       </div>
-    </div>
+    </motion.div>
   );
 };
 
@@ -130,29 +138,36 @@ export default function Featured() {
       githubLink: "#",
       demoLink: "#"
     }
-    
   ];
 
   return (
-    <section className="bg-[#0B0C0A] py-16 px-4 sm:px-8 md:px-12">
-      {/* Header Section */}
-      <div className="flex flex-wrap items-baseline gap-4 mb-8">
-        <span className="font-sans font-black tracking-tighter text-[clamp(2.5rem,6vw,8rem)] text-black bg-[#d4ff33] px-2">
-          FEATURED.
-        </span>
-        <span className="font-sans font-black tracking-tighter text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-amber-50 px-18">
-          (PROJECT SHOWCASE)
-        </span>
-      </div>
+    <section className="bg-[#0B0C0A] py-16 px-4 sm:px-8 md:px-12 overflow-hidden">
+      
+      {/* Header Section with Motion Animation */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.9, y: 30 }}
+        whileInView={{ opacity: 1, scale: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+      >
+        <div className="flex flex-wrap items-baseline gap-4 mb-8">
+          <span className="font-sans font-black tracking-tighter text-[clamp(2.5rem,6vw,8rem)] text-black bg-[#d4ff33] px-2 shadow-[0_0_25px_rgba(212,255,51,0.2)]">
+            FEATURED.
+          </span>
+          <span className="font-sans font-black tracking-tighter text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-amber-50 px-2 lg:px-18">
+            (PROJECT SHOWCASE)
+          </span>
+        </div>
 
-      <h1 className="text-amber-200 font-mono mb-8 text-sm sm:text-base">
-        // CREATIVE BUILD SHOWCASE
-      </h1>
+        <h1 className="text-amber-200 font-mono mb-8 text-sm sm:text-base">
+          // CREATIVE BUILD SHOWCASE
+        </h1>
+      </motion.div>
 
-      {/* Main Grid Layout for Cards: 1 Column on Small/Medium, 2 Columns on XL Screens */}
+      {/* Main Grid Layout for Cards */}
       <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
         {projectsData.map((project, index) => (
-          <ProjectCard key={index} {...project} />
+          <ProjectCard key={index} {...project} index={index} />
         ))}
       </div>
     </section>

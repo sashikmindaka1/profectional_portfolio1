@@ -126,7 +126,7 @@ export default function Certification() {
         <span className="font-sans font-black tracking-tighter text-[clamp(2.5rem,6vw,8rem)] text-black bg-[#d4ff33] px-2">
           FEATURED.
         </span>
-        <span className="font-sans font-black tracking-tighter text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-amber-50 px-6">
+        <span className="font-sans font-black tracking-tighter text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-amber-50">
           (CERTIFICATIONS SHOWCASE)
         </span>
       </div>

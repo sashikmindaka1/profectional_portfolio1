@@ -1,21 +1,36 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 
 export default function AboutLanguages() {
   return (
-    <section className='bg-[#1A1A1A] pl-4 lg:pl-8'> 
+    // Main motion section with smooth slide-up and fade-in scroll animation
+    <motion.section 
+      className='bg-[#1A1A1A] pl-4 lg:pl-8 overflow-hidden'
+      initial={{ opacity: 0, y: 60 }}        
+      whileInView={{ opacity: 1, y: 0 }}  
+      viewport={{ once: true, amount: 0.1 }} 
+      transition={{ duration: 0.7, ease: "easeOut" }}
+    >
       <div className='justify-between'>
-        <h1>
+        
+        {/* --- HEADER SECTION WITH DRAMATIC SCALE ANIMATION --- */}
+        <motion.h1
+          initial={{ opacity: 0, scale: 0.85, y: 40 }}
+          whileInView={{ opacity: 1, scale: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+        >
           <div className='flex flex-col lg:flex-row justify-between items-start lg:items-end w-full px-6 gap-4 lg:gap-0'>
             
-            {/* Max size eka 8rem (text-9xl) wenakam yanna 8vw ekka clamp eka update kara */}
-            <span className='font-sans font-black tracking-tighter text-[clamp(2.5rem,6vw,8rem)] whitespace-nowrap text-black inline-block border-4 border-[#d4ff33] bg-[#d4ff33] px-4 py-2 lg:px-6 lg:py-4 mt-20 lg:mt-24'>
+            {/* Main Title with #d4ff33 background */}
+            <span className='font-sans font-black tracking-tighter text-[clamp(2.5rem,6vw,8rem)] whitespace-nowrap text-black inline-block border-4 border-[#d4ff33] bg-[#d4ff33] px-4 py-2 lg:px-6 lg:py-4 mt-20 lg:mt-24 shadow-[0_0_30px_rgba(212,255,51,0.2)]'>
               WHAT I WORK WITH
             </span>
 
             <span className='font-mono text-amber-100 pb-2 lg:pb-6 px-4 lg:px-16 xl:px-24 '>// LANGUAGES AND TOOLS</span>
           </div>
           <p className='border-b-2 border-dashed border-amber-50 py-4'></p>
-        </h1>
+        </motion.h1>
 
         {/* --- FRONTEND SECTION --- */}
         <div className='group bg-[#1A1A1A] hover:bg-[#d4ff33] active:bg-[#d4ff33] flex flex-col lg:flex-row justify-between transition-all duration-300 ease-in-out hover:scale-[1.01] hover:shadow-2xl cursor-pointer'>
@@ -97,6 +112,6 @@ export default function AboutLanguages() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   )
 }

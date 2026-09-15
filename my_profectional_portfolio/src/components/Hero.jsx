@@ -56,7 +56,7 @@ export default function HeroSection() {
           <button className="bg-[#d4ff33] text-black border border-amber-50 rounded-full px-6 py-3 lg:px-8 lg:py-4 font-bold text-sm hover:scale-105 transition-transform duration-300 flex items-center justify-center gap-2">
             DISCUSS A PROJECT <span>&rarr;</span>
           </button>
-          <button className="bg-transparent text-amber-50 border border-amber-50 ck rounded-full px-6 py-3 lg:px-8 lg:py-4 font-bold text-sm hover:bg-black hover:text-white transition-colors duration-300">
+          <button className="bg-transparent text-amber-50 border border-amber-50 rounded-full px-6 py-3 lg:px-8 lg:py-4 font-bold text-sm hover:bg-black hover:text-white transition-colors duration-300">
             BEFORE/AFTER STATS
           </button>
         </div>
@@ -69,7 +69,7 @@ export default function HeroSection() {
             className="w-full h-[350px] lg:h-[500px] object-cover rounded-[2rem] border border-black shadow-lg"
           />
           {/* Overlay Label inside the image bottom */}
-          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 w-[90%] bg-white/90 backdrop-blur-sm rounded-full py-2.5 px-4 text-[10px] lg:text-xs font-mono font-semibold border border-black text-center text-gray-800">
+          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 w-[90%] bg-white/95 backdrop-blur-sm rounded-full py-2.5 px-4 text-[10px] lg:text-xs font-mono font-semibold border border-black text-center text-gray-800">
             // FULLSTACK DEVELOPER
           </div>
         </div>
