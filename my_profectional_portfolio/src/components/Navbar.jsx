@@ -1,40 +1,43 @@
-import React from 'react'
+import React from 'react';
 
 export default function Navbar() {
   return (
-    
-    <header className="sticky top-0 z-50 bg-[#040811] text-white shadow-lg w-full font-sans">
+    <header className="sticky top-0 z-50 bg-[#1A1A1A]/90 backdrop-blur-md border-b  w-full border-[1A1A1A] font-sans transition-all duration-300">
       
-     
-      <nav className="flex justify-between items-center py-5 w-full px-8 lg:px-24">
+      {/* max-w-screen-2xl centers the container on ultra-wide screens, while padding utilities push items to the edges */}
+      <nav className="flex justify-between items-center py-4 px-6 md:px-12 lg:px-24 max-w-screen-2xl mx-auto w-full">
         
-       
-        <div className="cursor-pointer transition-transform duration-300 hover:scale-105">
-          <h1 className="text-3xl font-extrabold tracking-wider text-blue-500">
-            sashik<span className="text-white">.</span>
+        {/* Left Side: Logo */}
+        <div className="cursor-pointer transition-transform duration-300 hover:scale-105 w-auto">
+          <h1 className='text-3xl font-["Black_Ops_One"] font-bold tracking-wider text-[#0B0C0A]'>
+            sashik.
           </h1>
         </div>
 
-       
-        <div className="flex gap-12 lg:gap-36 font-medium text-gray-300 tracking-wide text-lg">
-          <a href="#home" className="inline-block transition-all duration-300 hover:text-blue-400 hover:scale-110 active:scale-125">
-            Home
-          </a>
-          <a href="#about" className="inline-block transition-all duration-300 hover:text-blue-400 hover:scale-110 active:scale-125">
-            About
-          </a>
-          <a href="#projects" className="inline-block transition-all duration-300 hover:text-blue-400 hover:scale-110 active:scale-125">
-            Projects
-          </a>
-          <a href="#contact" className="inline-block transition-all duration-300 hover:text-blue-400 hover:scale-110 active:scale-125">
-            Contact
-          </a>
+        {/* Center: Navigation Links */}
+        <div className="hidden md:flex items-center justify-center gap-10 lg:gap-20 font-medium text-[#f7ecec] tracking-wide text-lg w-auto">
+          {['Home', 'About', 'Projects', 'Contact'].map((item) => (
+            <a 
+              key={item} 
+              href={`#${item.toLowerCase()}`} 
+              className="relative group transition-colors duration-300 hover:text-black"
+            >
+              {item}
+              {/* Animated underline effect on hover */}
+              <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          ))}
         </div>
-        <hr />
+
+        {/* Right Side: Contact Button */}
+        <div className="w-auto flex justify-end">
+          <button className="bg-[#d4ff33] border-2 border-b-black text-black font-semibold rounded-full px-6 py-2.5 hover:bg-black hover:text-[#d4ff33] hover:border-[#d4ff33] transition-all duration-300 shadow-sm hover:shadow-md transform hover:-translate-y-0.5">
+            CONTACT ME
+          </button>
+        </div>
 
       </nav>
-      <hr />
       
     </header>
-  )
+  );
 }

@@ -1,13 +1,12 @@
 @import "tailwindcss";
 
 @keyframes floatAnimation {
-  0%, 100% { transform: translate(10px, -10px); }
-  33% { transform: translate(30px, -30px); }
-  66% { transform: translate(-25px, 25px); }
+  0%, 100% { transform: translate(0px, 0px); }
+  33% { transform: translate(3px, -3px); }
+  66% { transform: translate(-2px, 2px); }
 }
 
 .animate-float {
-  animation: floatAnimation 6s ease-in-out infinite;
+ 
+  animation: floatAnimation 10s ease-in-out infinite; 
 }
-
-
