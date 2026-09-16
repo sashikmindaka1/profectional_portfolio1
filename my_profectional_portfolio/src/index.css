@@ -10,3 +10,7 @@
  
   animation: floatAnimation 10s ease-in-out infinite; 
 }
+
+html {
+  scroll-behavior: smooth;
+}
