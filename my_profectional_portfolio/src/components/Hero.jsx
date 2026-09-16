@@ -18,7 +18,7 @@ export default function HeroSection() {
       */}
       <div className="w-full flex justify-between items-center pb-4 border-b border-dashed border-gray-400 text-xs lg:text-sm font-semibold text-gray-500 uppercase tracking-widest relative z-10 mt-12 lg:mt-0">
         <span>SASHIK.DEV — FULLSTACK</span>
-        <span>NSBM — SWE</span>
+        <span>PROBLEM SOLVER</span>
       </div>
 
       {/* 
