@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 export default function Navbar() {
-  // Mobile menu eka open da close da kiyala track karanna state eka
+
   const [isOpen, setIsOpen] = useState(false);
 
   // Menu eka toggle karana function eka
@@ -23,7 +23,7 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-[#1A1A1A]/90 backdrop-blur-md border-b w-full border-[#1A1A1A] font-sans transition-all duration-300">
       
-      {/* relative class eka damma, dropdown menu eka yatin hariyata position wenna */}
+   
       <nav className="flex justify-between items-center py-4 px-6 md:px-12 lg:px-24 max-w-screen-2xl mx-auto w-full relative">
         
         {/* Left Side: Logo */}
@@ -79,14 +79,14 @@ export default function Navbar() {
       </nav>
 
       {/* Mobile Dropdown Menu */}
-      {/* isOpen 'true' nam meka pennanawa */}
+      
       {isOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-[#1A1A1A] border-t-2 border-[#d4ff33] flex flex-col shadow-2xl pb-6">
           {navItems.map((item) => (
             <a
               key={item.name}
               href={`#${item.id}`}
-              onClick={toggleMenu} // Link ekak click kalama menu eka wahanna
+              onClick={toggleMenu} 
               className="py-4 px-6 text-[#f7ecec] font-bold border-b border-gray-800 hover:text-[#d4ff33] transition-colors"
             >
               {item.name}
