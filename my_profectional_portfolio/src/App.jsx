@@ -21,9 +21,7 @@ function App() {
       <section id="manifesto">
         <ManifestoSection />
       </section>
-      <section id="about">
-        <AboutLanguages />
-      </section>
+      
       
       <section id="projects">
         <Projects />

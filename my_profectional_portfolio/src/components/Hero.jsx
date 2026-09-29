@@ -11,7 +11,7 @@ export default function HeroSection() {
     <section className="relative w-full min-h-[90dvh] bg-[#050505] flex flex-col justify-between p-6 lg:p-12 overflow-hidden">
       
       {/* Top Header Section */}
-      <div className="w-full flex justify-between items-center pb-4 border-b border-dashed border-[#C0C0C0]/40 text-xs lg:text-sm font-semibold text-[#C0C0C0] uppercase tracking-widest relative z-10 mt-12 lg:mt-0">
+      <div className="w-full flex justify-between items-center pb-4 border-[#C0C0C0]/40 text-xs lg:text-sm font-semibold text-[#C0C0C0] uppercase tracking-widest relative z-10 mt-12 lg:mt-0">
         <span>SASHIK.DEV — FULLSTACK</span>
         <span>PROBLEM SOLVER</span>
       </div>
@@ -45,13 +45,13 @@ export default function HeroSection() {
         <div className="flex flex-col sm:flex-row gap-4 mb-4 lg:mb-0 w-full lg:w-auto">
           <a href="projects#projects">
             {/* Button 1: Solid Black and Silver, no glow */}
-            <button className="bg-[#050505] text-[#C0C0C0] border border-[#C0C0C0] rounded-full px-6 py-3 lg:px-8 lg:py-4 font-bold text-sm hover:bg-[#C0C0C0] hover:text-[#000000] transition-all duration-300 flex items-center justify-center gap-2">
+            <button className="bg-[#050505] text-[#C0C0C0] border border-[#C0C0C0]  px-6 py-3 lg:px-8 lg:py-4 font-bold text-sm hover:bg-[#C0C0C0] hover:text-[#000000] transition-all duration-300 flex items-center justify-center gap-2">
               DISCUSS A PROJECT <span>&rarr;</span>
             </button>
           </a>
           <a href="assests/my-cv.pdf" download="Sashik_Mindaka_CV.pdf">
             {/* Button 2: Transparent with silver border, no glow */}
-            <button className="bg-transparent text-[#C0C0C0] border border-[#C0C0C0] rounded-full px-6 py-3 lg:px-8 lg:py-4 font-bold text-sm hover:bg-[#C0C0C0]/10 transition-all duration-300">
+            <button className="bg-transparent text-[#C0C0C0] border border-[#C0C0C0]  px-6 py-3 lg:px-8 lg:py-4 font-bold text-sm hover:bg-[#C0C0C0]/10 transition-all duration-300">
               Download My Resume
             </button>
           </a>
@@ -80,7 +80,7 @@ export default function HeroSection() {
 
 
           {/* Overlay Label inside the image bottom - no glow */}
-          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 w-[90%] bg-[#050505]/90 backdrop-blur-md rounded-full py-2.5 px-4 text-[10px] lg:text-xs font-mono font-semibold border border-[#C0C0C0] text-center text-[#C0C0C0]">
+          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 w-[90%] bg-[#050505]/90 backdrop-blur-md  py-2.5 px-4 text-[10px] lg:text-xs font-mono font-semibold border border-[#C0C0C0] text-center text-[#C0C0C0]">
             // FULLSTACK DEVELOPER
           </div>
         </div>
