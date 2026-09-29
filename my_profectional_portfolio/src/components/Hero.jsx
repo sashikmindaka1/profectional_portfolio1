@@ -57,7 +57,7 @@ export default function HeroSection() {
         </div>
 
         {/* Right Side Image Section */}
-       <div className="relative w-48 lg:w-[340px] mb-8 lg:mb-0 group mx-auto lg:mx-0">
+       <div className="relative w-48 lg:w-[340px] mb-8 lg:mb-0 group mx-auto lg:mx-0 -translate-y-8 lg:-translate-y-16">
       <img 
        src={myimg1} 
        alt="Sashik Mindaka" 
