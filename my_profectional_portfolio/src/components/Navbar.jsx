@@ -21,15 +21,14 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-[#1A1A1A]/90 backdrop-blur-md border-b w-full border-[#1A1A1A] font-sans transition-all duration-300">
+    <header className="sticky top-0 z-50 bg-black backdrop-blur-md border-b w-full border-amber-50/20 font-sans transition-all duration-300">
       
-   
       <nav className="flex justify-between items-center py-4 px-6 md:px-12 lg:px-24 max-w-screen-2xl mx-auto w-full relative">
         
         {/* Left Side: Logo */}
         <div className="cursor-pointer transition-transform duration-300 hover:scale-105 w-auto">
           {/* Clicking the logo will also navigate back to the Home section */}
-          <a href="#home" className='text-3xl font-["Black_Ops_One"] font-bold tracking-wider text-[#d4ff33]'>
+          <a href="#home" className='text-3xl font-["Black_Ops_One"] font-bold tracking-wider text-[#fefaee]'>
             sashik.
           </a>
         </div>
@@ -40,11 +39,11 @@ export default function Navbar() {
             <a 
               key={item.name} 
               href={`#${item.id}`} // Passing the relevant section ID to the href attribute
-              className="relative group transition-colors duration-300 hover:text-[#d4ff33]"
+              className="relative group transition-colors duration-300 hover:text-[#D4AF37]"
             >
               {item.name}
               {/* Animated underline effect on hover */}
-              <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#d4ff33] transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#D4AF37] transition-all duration-300 group-hover:w-full"></span>
             </a>
           ))}
         </div>
@@ -52,7 +51,7 @@ export default function Navbar() {
         {/* Right Side: Contact Button (Desktop Only - 'hidden md:block') */}
         <a href="#Footer" className="hidden md:block">
           <div className="w-auto flex justify-end">
-            <button className="bg-[#d4ff33] border-2 border-[#d4ff33] text-black font-semibold rounded-full px-6 py-2.5 hover:bg-black hover:text-[#d4ff33] hover:border-[#d4ff33] transition-all duration-300 shadow-sm hover:shadow-md transform hover:-translate-y-0.5">
+            <button className="bg-amber-50 border-2 border-b-black text-[#0A1931] font-semibold rounded-full px-6 py-2.5 hover:bg-[#0A1931] hover:text-[#D4AF37] transition-all duration-300 shadow-[0_0_15px_rgba(212,175,55,0.2)] hover:shadow-[0_0_20px_rgba(212,175,55,0.4)] transform hover:-translate-y-0.5">
               CONTACT ME
             </button>
           </div>
@@ -60,7 +59,7 @@ export default function Navbar() {
 
         {/* Mobile Menu Toggle Button (Mobile Only - 'md:hidden block') */}
         <button 
-          className="md:hidden block text-[#d4ff33] focus:outline-none"
+          className="md:hidden block text-[#D4AF37] focus:outline-none"
           onClick={toggleMenu}
         >
           {isOpen ? (
@@ -81,13 +80,13 @@ export default function Navbar() {
       {/* Mobile Dropdown Menu */}
       
       {isOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-[#1A1A1A] border-t-2 border-[#d4ff33] flex flex-col shadow-2xl pb-6">
+        <div className="md:hidden absolute top-full left-0 w-full bg-[#0A1931] border-t-2 border-[#D4AF37] flex flex-col shadow-2xl pb-6">
           {navItems.map((item) => (
             <a
               key={item.name}
               href={`#${item.id}`}
               onClick={toggleMenu} 
-              className="py-4 px-6 text-[#f7ecec] font-bold border-b border-gray-800 hover:text-[#d4ff33] transition-colors"
+              className="py-4 px-6 text-[#f7ecec] font-bold border-b border-[#D4AF37]/20 hover:text-[#D4AF37] transition-colors"
             >
               {item.name}
             </a>
@@ -96,7 +95,7 @@ export default function Navbar() {
           {/* Mobile Menu Contact Button */}
           <div className="px-6 pt-6">
             <a href="#Footer" onClick={toggleMenu}>
-              <button className="w-full bg-[#d4ff33] border-2 border-[#d4ff33] text-black font-semibold rounded-full px-6 py-3 hover:bg-black hover:text-[#d4ff33] transition-all duration-300">
+              <button className="w-full bg-[#D4AF37] border-2 border-[#D4AF37] text-[#0A1931] font-semibold rounded-full px-6 py-3 hover:bg-[#0A1931] hover:text-[#D4AF37] transition-all duration-300 shadow-[0_0_15px_rgba(212,175,55,0.2)]">
                 CONTACT ME
               </button>
             </a>
