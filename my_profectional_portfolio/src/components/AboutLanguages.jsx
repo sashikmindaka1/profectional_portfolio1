@@ -40,7 +40,7 @@ export default function AboutLanguages() {
           Restructured using proper flex-col on mobile and flex-row on large screens. 
           Added padding (p-6 lg:p-10) for better hover area.
         */}
-        <div className='group bg-[#1A1A1A] hover:bg-[#d4ff33] active:bg-[#d4ff33] flex flex-col lg:flex-row justify-between items-start lg:items-center transition-all duration-300 ease-in-out hover:scale-[1.01] hover:shadow-2xl cursor-pointer p-6 lg:p-10 border-b-2 border-dashed border-amber-50'>
+        <div className='group bg-[#1A1A1A] hover:bg-[#86efac] active:bg-[#86efac]  flex flex-col lg:flex-row justify-between items-start lg:items-center transition-all duration-300 ease-in-out hover:scale-[1.01] hover:shadow-2xl cursor-pointer p-6 lg:p-10 border-b-2 border-dashed border-amber-50'>
           
           {/* Left Side: Number, Title, and Description */}
           <div className='w-full lg:w-2/3'>
@@ -66,7 +66,7 @@ export default function AboutLanguages() {
         </div>
 
         {/* --- BACKEND SECTION --- */}
-        <div className='group bg-[#1A1A1A] hover:bg-[#d4ff33] active:bg-[#d4ff33] flex flex-col lg:flex-row justify-between items-start lg:items-center transition-all duration-300 ease-in-out hover:scale-[1.01] hover:shadow-2xl cursor-pointer p-6 lg:p-10 border-b-2 border-dashed border-amber-50'>
+        <div className='group bg-[#1A1A1A] hover:bg-[#86efac] active:bg-[#86efac]  flex flex-col lg:flex-row justify-between items-start lg:items-center transition-all duration-300 ease-in-out hover:scale-[1.01] hover:shadow-2xl cursor-pointer p-6 lg:p-10 border-b-2 border-dashed border-amber-50'>
           <div className='w-full lg:w-2/3'>
             <div className='flex items-baseline gap-4'>
               <span className='font-sans font-black tracking-tighter text-3xl md:text-5xl text-gray-400 group-hover:text-black transition-colors duration-300'>02</span>
@@ -87,7 +87,7 @@ export default function AboutLanguages() {
         </div>
 
         {/* --- DATABASE SECTION --- */}
-        <div className='group bg-[#1A1A1A] hover:bg-[#d4ff33] active:bg-[#d4ff33] flex flex-col lg:flex-row justify-between items-start lg:items-center transition-all duration-300 ease-in-out hover:scale-[1.01] hover:shadow-2xl cursor-pointer p-6 lg:p-10 border-b-2 border-dashed border-amber-50'>
+        <div className='group bg-[#1A1A1A] hover:bg-[#86efac] active:bg-[#86efac]  flex flex-col lg:flex-row justify-between items-start lg:items-center transition-all duration-300 ease-in-out hover:scale-[1.01] hover:shadow-2xl cursor-pointer p-6 lg:p-10 border-b-2 border-dashed border-amber-50'>
           <div className='w-full lg:w-2/3'>
             <div className='flex items-baseline gap-4'>
               <span className='font-sans font-black tracking-tighter text-3xl md:text-5xl text-gray-400 group-hover:text-black transition-colors duration-300'>03</span>
@@ -108,7 +108,7 @@ export default function AboutLanguages() {
         </div>
 
         {/* --- TESTING SECTION --- */}
-        <div className='group bg-[#1A1A1A] hover:bg-[#d4ff33] active:bg-[#d4ff33] flex flex-col lg:flex-row justify-between items-start lg:items-center transition-all duration-300 ease-in-out hover:scale-[1.01] hover:shadow-2xl cursor-pointer p-6 lg:p-10 border-b-2 border-dashed border-amber-50'>
+        <div className='group bg-[#1A1A1A] hover:bg-[#86efac] active:bg-[#86efac]  flex flex-col lg:flex-row justify-between items-start lg:items-center transition-all duration-300 ease-in-out hover:scale-[1.01] hover:shadow-2xl cursor-pointer p-6 lg:p-10 border-b-2 border-dashed border-amber-50'>
           <div className='w-full lg:w-2/3'>
             <div className='flex items-baseline gap-4'>
               <span className='font-sans font-black tracking-tighter text-3xl md:text-5xl text-gray-400 group-hover:text-black transition-colors duration-300'>04</span>

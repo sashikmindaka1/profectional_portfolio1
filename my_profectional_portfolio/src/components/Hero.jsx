@@ -4,9 +4,6 @@ import myimg1 from '../assests/myimg21.jpg';
 export default function HeroSection() {
   return (
 
-    
-
-
     /* 
       Main wrapper for the Hero Section. 
       - 'relative' is required because child elements use 'absolute' positioning.
@@ -57,13 +54,13 @@ export default function HeroSection() {
         
         {/* Action Buttons Section */}
         <div className="flex flex-col sm:flex-row gap-4 mb-4 lg:mb-0 w-full lg:w-auto">
-          <a href = "Project">
+          <a href = "projects#projects">
           <button className="bg-[#d4ff33] text-black border border-amber-50 rounded-full px-6 py-3 lg:px-8 lg:py-4 font-bold text-sm hover:scale-105 transition-transform duration-300 flex items-center justify-center gap-2">
             DISCUSS A PROJECT <span>&rarr;</span>
           </button>
           </a>
-          <button className="bg-transparent text-amber-50 border border-amber-50 rounded-full px-6 py-3 lg:px-8 lg:py-4 font-bold text-sm hover:bg-black hover:text-white transition-colors duration-300">
-            BEFORE/AFTER STATS
+          <button className="bg-transparent text-amber-50 border border-amber-50 rounded-full px-6 py-3 lg:px-8 lg:py-4 font-bold text-sm hover:bg-white hover:text-black hover:border-black transition-colors duration-300">
+            Download My Resume
           </button>
         </div>
 
