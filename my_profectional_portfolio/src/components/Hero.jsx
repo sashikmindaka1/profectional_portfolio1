@@ -1,5 +1,6 @@
 import React from 'react';
 import myimg1 from '../assests/myimg21.jpg';
+import githubIcon from '../assests/images.png';
 
 export default function HeroSection() {
   return (
@@ -57,13 +58,27 @@ export default function HeroSection() {
         </div>
 
         {/* Right Side Image Section */}
-       <div className="relative w-48 lg:w-[340px] mb-8 lg:mb-0 group mx-auto lg:mx-0 -translate-y-8 lg:-translate-y-16">
+       <div className="relative w-48 lg:w-[340px] mb-8 lg:mb-0 group mx-auto lg:mx-0 -translate-y-8 lg:-translate-y-18">
       <img 
        src={myimg1} 
        alt="Sashik Mindaka" 
     
        className="w-full h-[260px] lg:h-[390px] object-cover rounded-[2rem] border-2 border-[#C0C0C0]"
       />
+     <div className='w-10 h-10'>
+        <a href="https://github.com/sashikmindaka1 " target="_blank">
+        <img src= {githubIcon} 
+        alt="github link" />
+        
+        </a>
+      </div>
+
+
+
+
+
+
+
           {/* Overlay Label inside the image bottom - no glow */}
           <div className="absolute bottom-4 left-1/2 -translate-x-1/2 w-[90%] bg-[#050505]/90 backdrop-blur-md rounded-full py-2.5 px-4 text-[10px] lg:text-xs font-mono font-semibold border border-[#C0C0C0] text-center text-[#C0C0C0]">
             // FULLSTACK DEVELOPER
