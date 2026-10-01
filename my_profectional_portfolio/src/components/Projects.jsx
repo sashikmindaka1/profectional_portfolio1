@@ -105,7 +105,12 @@ export default function Projects() {
           ))}
 
         </div>
-
+        <div className="flex justify-center my-8">
+          <button className="text-lg font-semibold px-8 py-3 border-2 border-gray-400 rounded-full hover:bg-white hover:text-black hover:border-white transition-all duration-300">
+             Load more
+          </button>
+        </div>
+        
       </div>
     </div>
   );
