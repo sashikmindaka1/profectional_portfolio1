@@ -10,6 +10,7 @@ import Projects from "./components/Projects"
 import Education from "./components/Education"
 import Footer from "./components/Footer"
 import Aboutme from "./components/Aboutme"
+import Keytools from "./components/Keytools"
 
 function App() {
   return(
@@ -31,6 +32,10 @@ function App() {
 
       <section id="aboutme">
         <Aboutme />
+      </section>
+
+       <section id="keytools">
+        <Keytools />
       </section>
 
       <section id="certification">
