@@ -78,7 +78,7 @@ export default function Keytools() {
       </h3>
       
       {/* Main Title */}
-      <h1 className="text-white text-3xl lg:text-5xl font-bold mb-16 text-center lg:text-center">
+      <h1 className="text-white text-3xl lg:text-6xl font-bold mb-16 text-center lg:text-center">
         THE KEY TOOLS AND LANGUAGES I USE
       </h1>
 

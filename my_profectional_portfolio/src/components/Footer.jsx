@@ -11,17 +11,17 @@ const Footer = () => {
 
         <div className="md:col-span-5 flex flex-col gap-6">
           <div className="inline-block">
-            <span className="font-sans font-black tracking-tighter text-4xl sm:text-5xl text-black bg-[#d4ff33] px-2 uppercase">
-              Sashik Mindaka.
+            <span className="font-sans font-black tracking-tighter text-4xl sm:text-5xl text-amber-50 bg-[#0B0C0A] px-2 uppercase">
+              Sashik Mindaka .
             </span>
           </div>
           <p className="font-mono text-sm leading-relaxed text-gray-400 max-w-sm">
             Software Engineering Undergraduate at NSBM Green University. Crafting robust web applications with React, Java, and Spring Boot. Building the future, one line of code at a time.
           </p>
-          <div className="flex gap-3 font-mono text-xs text-amber-500/80 mt-2">
-            <span>[ REACT ]</span>
-            <span>[ SPRING BOOT ]</span>
-            <span>[ JAVA ]</span>
+          <div className="flex gap-3 font-mono text-xs text-amber-50 mt-2">
+            <span>[ WEB ]</span>
+            <span>[ MOBILE APP ]</span>
+            <span>[ SOFTWARE ]</span>
           </div>
         </div>
 
@@ -30,10 +30,10 @@ const Footer = () => {
           <h4 className="text-amber-50 font-bold text-lg mb-2 uppercase tracking-widest border-b border-gray-800 pb-2 inline-block">
             Directory
           </h4>
-          <a href="#about" className="hover:text-[#d4ff33] transition-colors w-fit">{'// About Me'}</a>
-          <a href="#projects" className="hover:text-[#d4ff33] transition-colors w-fit">{'// Projects'}</a>
-          <a href="#education" className="hover:text-[#d4ff33] transition-colors w-fit">{'// Education'}</a>
-          <a href="#contact" className="hover:text-[#d4ff33] transition-colors w-fit">{'// Contact'}</a>
+          <a href="#about" className="hover:text-[#ff4133] transition-colors w-fit">{' /About Me/'}</a>
+          <a href="#manifesto" className="hover:text-[#ff4133] transition-colors w-fit">{' /Projects/'}</a>
+          <a href="#education" className="hover:text-[#ff4133] transition-colors w-fit">{' /Education/'}</a>
+          <a href="https://www.linkedin.com/in/sashik-mindaka-77593a364/" className="hover:text-[#ff4133] transition-colors w-fit">{' /Contact/'}</a>
         </div>
 
         {/* 3. Social Media Links Section */}
@@ -65,7 +65,7 @@ const Footer = () => {
 
             <a 
               href="https://mail.google.com/mail/u/1/#inbox?compose=new" 
-              className="flex items-center justify-center gap-2 border border-gray-700 bg-[#111315] hover:bg-[#d4ff33] hover:text-black hover:border-[#d4ff33] transition-all py-3 rounded-lg font-mono font-bold text-sm col-span-2"
+              className="flex items-center justify-center gap-2 border border-gray-700 bg-[#111315] hover:bg-amber-50 hover:text-black hover:border-[#d4ff33] transition-all py-3 rounded-lg font-mono font-bold text-sm col-span-2"
             >
            
               SAY HELLO {'->'}
@@ -82,10 +82,10 @@ const Footer = () => {
         
         <div className="flex items-center gap-2">
           <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#d4ff33] opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-[#d4ff33]"></span>
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-50 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-50"></span>
           </span>
-          <span className="uppercase tracking-widest text-[#d4ff33]">Available for Internships (2027)</span>
+          <span className="uppercase tracking-widest text-amber-50">Available for Internships (2027)</span>
         </div>
       </div>
 
