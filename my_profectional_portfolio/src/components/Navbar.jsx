@@ -50,7 +50,7 @@ export default function Navbar() {
         {/* Right Side: Contact Button (Desktop Only - 'hidden md:block') */}
         <a href="#Footer" className="hidden md:block">
           <div className="w-auto flex justify-end">
-            <button className="bg-amber-50 border-2 border-b-black text-[#0A1931] font-semibold px-6 py-2.5 hover:bg-[#0A1931] hover:text-[#D4AF37] transition-all duration-300 shadow-[0_0_15px_rgba(212,175,55,0.2)] hover:shadow-[0_0_20px_rgba(212,175,55,0.4)] transform hover:-translate-y-0.5">
+            <button className="bg-amber-50 border-2 rounded-4xl text-[#0A1931] font-semibold px-6 py-2.5 hover:bg-black hover:text-amber-50 transition-all duration-300 shadow-[0_0_15px_rgba(212,175,55,0.2)] hover:shadow-[0_0_20px_rgba(212,175,55,0.4)] transform hover:-translate-y-0.5">
               CONTACT ME
             </button>
           </div>
