@@ -35,7 +35,7 @@ export default function HeroSection() {
         
         {/* Left Side: Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 w-full lg:w-auto gap-12">
-          <a href="projects#projects">
+          <a href="#projects">
             <button className="bg-[#050505] text-[#C0C0C0] border border-[#C0C0C0] px-6 py-3 lg:px-8 lg:py-4 font-bold text-sm hover:bg-[#C0C0C0] hover:text-[#000000] transition-all duration-300 flex items-center justify-center gap-4 rounded-3xl">
               DISCUSS A PROJECT <span>&rarr;</span>
             </button>
