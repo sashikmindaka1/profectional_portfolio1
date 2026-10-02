@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 // Make sure these folder names are correct in your actual project structure
 import imgt1 from '../assests/Untitled design (5).jpg'; 
-import imgGit from '../assests/images.png'; // Fixed 1: Added missing image import
-import imgt2 from '../assests/Untitled design (6).jpg'; 
+import imgGit from '../assests/images.png'; 
+import imgt3 from '../assests/Untitled design (6).jpg'; 
+import imgt2 from '../assests/Untitled design (7).jpg'; 
+import imgt4 from '../assests/Untitled design (9).jpg';
 
 // 1. Dot-style ChooseOption Component
 const ChooseOption = ({ activeTab, setActiveTab }) => {
-  const categories = ['ALL', 'BRANDING', 'SEO', 'UI DESIGN', 'WEB APPLICATION', 'WEBSITE'];
+  const categories = ['ALL', 'WEB APPLICATION', 'WEBSITE', 'E-COMMERCE'];
 
   return (
     <div className='flex flex-wrap items-center justify-center gap-6 mt-6'>
@@ -35,23 +37,49 @@ const ChooseOption = ({ activeTab, setActiveTab }) => {
 export default function Projects() {
   const [activeTab, setActiveTab] = useState('ALL');
 
-  // Fixed 2: Changed duplicate IDs to unique IDs
-  // Fixed 3: Added missing 'projectName' and 'githubLink' properties
+  // Multi-category support with Array & Fixed Comma errors
   const Projectlist = [
-    { id: 1, image: imgt1, category: 'WEBSITE', projectName: 'Website Project 1', githubLink: 'https://github.com' },
-    { id: 2, image: imgt2, category: 'BRANDING', projectName: 'Branding Project 1', githubLink: 'https://github.com' },
-    { id: 3, image: imgt1, category: 'WEBSITE', projectName: 'Website Project 2', githubLink: 'https://github.com' },
-    { id: 4, image: imgt1, category: 'BRANDING', projectName: 'Branding Project 2', githubLink: 'https://github.com' },
-    { id: 5, image: imgt1, category: 'UI DESIGN', projectName: 'UI Design Project', githubLink: 'https://github.com' }
+    { 
+      id: 1, 
+      image: imgt1, 
+      category: ['WEB APPLICATION'], 
+      projectName: 'TravelMania', 
+      githubLink: 'https://github.com/malindu-sahanpriya/TravelMania', 
+      liveLink: 'https://travelmania-final-eddition.vercel.app/' 
+    },
+    { 
+      id: 2, 
+      image: imgt2, 
+      category: ['E-COMMERCE', 'WEBSITE'], 
+      projectName: 'Gamezone computer shop', 
+      githubLink: 'https://github.com/malindu-sahanpriya/GameZ', 
+      liveLink: 'https://github.com/malindu-sahanpriya/GameZ' 
+    },
+    { 
+      id: 3, 
+      image: imgt3, 
+      category: ['WEB APPLICATION'], 
+      projectName: 'SM Financial', 
+      githubLink: 'https://github.com/sashikmindaka1/MernFinancialTrackerApp', 
+      liveLink: 'https://mern-financial-tracker-app.vercel.app/' 
+    },
+    { 
+      id: 4, 
+      image: imgt4, 
+      category: ['WEBSITE'], 
+      projectName: 'My portfolio', 
+      githubLink: 'https://github.com/sashikmindaka1/profectional_portfolio1', 
+      liveLink: 'https://www.sashikmindaka.dev/' 
+    },
   ];
 
+  // Category filter for arrays
   const filteredProjects = activeTab === 'ALL' 
     ? Projectlist 
-    : Projectlist.filter(p => p.category === activeTab);
+    : Projectlist.filter(p => p.category.includes(activeTab));
 
   return (
     <div className='bg-[#050505] min-h-screen pb-24 text-white'>
-      
       <div className='max-w-[95rem] mx-auto px-4 lg:px-9 pt-16'>
         
         {/* Header Section */}
@@ -67,48 +95,51 @@ export default function Projects() {
 
         {/* Cards Grid */}
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-7 mt-12'>
-          
           {filteredProjects.map((project) => (
             <div 
               key={project.id} 
-              // Fixed 4: Removed invalid inline comments (//) inside the JSX tag
+              // Entire Card Click Handler
+              onClick={() => window.open(project.liveLink, '_blank', 'noopener,noreferrer')}
               className="rounded-[2rem] overflow-hidden group relative h-[350px] md:h-[480px] shadow-2xl cursor-pointer"
             >
               
               <img 
                 src={project.image}
-                alt="Project Mockup" 
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100 hover:blur-xs" 
+                alt={project.projectName} 
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100" 
               />
 
-               <div className="absolute top-6 left-6 md:top-8 md:left-8 z-20">
+              {/* Title & Category Overlay */}
+              <div className="absolute top-6 left-6 md:top-8 md:left-8 z-20">
                 <p className="text-white/70 text-xs font-mono tracking-widest uppercase mb-1">
-                  {project.category}
+                  {Array.isArray(project.category) ? project.category.join(' / ') : project.category}
                 </p>
                 <h2 className="text-2xl md:text-3xl font-bold text-white tracking-tight">
                   {project.projectName}
                 </h2>
               </div>
 
-              {/* 4. Github Button (Bottom Left) */}
+              {/* Github Button (Bottom Left) */}
               <div className="absolute bottom-6 left-6 md:bottom-8 md:left-8 z-20">
-                <a 
-                  href={project.githubLink} 
-                  target="_blank" 
-                  rel="noreferrer" 
-                  // Fixed 4: Removed invalid inline comments (//) inside the JSX tag
-                  className="w-12 h-12 bg-black rounded-full backdrop-blur-md border border-white/20 flex items-center justify-center hover:bg-white hover:border-white transition-all group/btn"
+                <button 
+                  onClick={(e) => {
+                    e.stopPropagation(); // Stops parent card onClick from triggering
+                    window.open(project.githubLink, '_blank', 'noopener,noreferrer');
+                  }}
+                  className="w-12 h-12 bg-black rounded-full backdrop-blur-md border border-white/20 flex items-center justify-center hover:bg-white hover:border-white transition-all group/btn cursor-pointer"
                 >
                   <img src={imgGit} alt="github" className="w-5 h-5 invert group-hover/btn:invert-0 transition-all" />
-                </a>
-            </div>
-           </div>
-          ))}
+                </button>
+              </div>
 
+            </div>
+          ))}
         </div>
+
+        {/* Load More Button */}
         <div className="flex justify-center my-8">
-          <button className="text-lg font-semibold px-8 py-3 border-2 border-gray-400 rounded-full hover:bg-white hover:text-black hover:border-white transition-all duration-300">
-             Load more
+          <button className="text-lg font-semibold px-8 py-3 border-2 border-gray-400 rounded-full hover:bg-white hover:text-black hover:border-white transition-all duration-300 cursor-pointer">
+            Load more
           </button>
         </div>
         
