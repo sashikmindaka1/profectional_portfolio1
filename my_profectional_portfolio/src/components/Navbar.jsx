@@ -77,7 +77,7 @@ export default function Navbar() {
       </nav>
 
       {/* Mobile Dropdown Menu */}
-      
+        
       {isOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-[#0A1931] border-t-2 border-[#D4AF37] flex flex-col shadow-2xl pb-6">
           {navItems.map((item) => (
