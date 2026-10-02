@@ -40,7 +40,7 @@ export default function HeroSection() {
               DISCUSS A PROJECT <span>&rarr;</span>
             </button>
           </a>
-          <a href="assests/my-cv.pdf" download="Sashik_Mindaka_CV.pdf">
+          <a href="/my-cv.pdf" download="Sashik_Mindaka_CV.pdf">
             <button className="bg-transparent text-[#C0C0C0] border border-[#C0C0C0] px-6 py-3 lg:px-8 lg:py-4 font-bold text-sm hover:bg-[#C0C0C0]/10 transition-all duration-300 rounded-3xl">
               Download My Resume
             </button>

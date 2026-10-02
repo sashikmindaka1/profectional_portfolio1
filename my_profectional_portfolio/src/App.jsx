@@ -1,61 +1,78 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
-import Navbar from "./components/Navbar"
-import Hero from "./components/Hero"
-import ManifestoSection from "./components/ManifestoSection"  
-import AboutLanguages from "./components/AboutLanguages" 
-import Certification from "./components/Certification"
-import Projects from "./components/Projects"
-import Education from "./components/Education"
-import Footer from "./components/Footer"
-import Aboutme from "./components/Aboutme"
-import Keytools from "./components/Keytools"
+// CustomCursor එක මෙතනින් Import කරන්න 
+import CustomCursor from './components/CustomCursor';
+
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import ManifestoSection from "./components/ManifestoSection";  
+import AboutLanguages from "./components/AboutLanguages"; 
+import Certification from "./components/Certification";
+import Projects from "./components/Projects";
+import Education from "./components/Education";
+import Footer from "./components/Footer";
+import Aboutme from "./components/Aboutme";
+import Keytools from "./components/Keytools";
+
+// Section wrapper component for scroll animation
+const AnimatedSection = ({ children, id }) => {
+  return (
+    <motion.section
+      id={id}
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    >
+      {children}
+    </motion.section>
+  );
+};
 
 function App() {
-  return(
-    <div>
+  return (
+    <div className="bg-[#050505] text-white selection:bg-white selection:text-black">
+      
+      {/* මුළු Website එකටම අදාළව එක පාරක් පමණක් Cursor එක මෙතන දාන්න */}
+      <CustomCursor />
+
       <Navbar />
       
-      <section id="home">
+      <AnimatedSection id="home">
         <Hero />
-      </section>
-      <section id="manifesto">
+      </AnimatedSection>
+
+      <AnimatedSection id="manifesto">
         <ManifestoSection />
-      </section>
+      </AnimatedSection>
       
-      
-      <section id="projects">
+      <AnimatedSection id="projects">
         <Projects />
-      </section>
+      </AnimatedSection>
 
-
-      <section id="aboutme">
+      <AnimatedSection id="aboutme">
         <Aboutme />
-      </section>
+      </AnimatedSection>
 
-       <section id="keytools">
+      <AnimatedSection id="keytools">
         <Keytools />
-      </section>
+      </AnimatedSection>
 
-      <section id="certification">
+      <AnimatedSection id="certification">
         <Certification />
-      </section>
+      </AnimatedSection>
 
-      <section id="education">
+      <AnimatedSection id="education">
         <Education />
-      </section>
+      </AnimatedSection>
 
-      <section id="Footer">
+      <AnimatedSection id="footer">
         <Footer />
-      </section>
-      
-
-      
+      </AnimatedSection>
       
     </div>
-   
-  )
+  );
 }
 
-export default App
+export default App;
