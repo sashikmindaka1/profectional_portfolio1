@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 // Make sure these folder names are correct in your actual project structure
 import imgt1 from '../assests/Untitled design (5).jpg'; 
 import imgGit from '../assests/images.png'; // Fixed 1: Added missing image import
+import imgt2 from '../assests/Untitled design (6).jpg'; 
 
 // 1. Dot-style ChooseOption Component
 const ChooseOption = ({ activeTab, setActiveTab }) => {
@@ -38,7 +39,7 @@ export default function Projects() {
   // Fixed 3: Added missing 'projectName' and 'githubLink' properties
   const Projectlist = [
     { id: 1, image: imgt1, category: 'WEBSITE', projectName: 'Website Project 1', githubLink: 'https://github.com' },
-    { id: 2, image: imgt1, category: 'BRANDING', projectName: 'Branding Project 1', githubLink: 'https://github.com' },
+    { id: 2, image: imgt2, category: 'BRANDING', projectName: 'Branding Project 1', githubLink: 'https://github.com' },
     { id: 3, image: imgt1, category: 'WEBSITE', projectName: 'Website Project 2', githubLink: 'https://github.com' },
     { id: 4, image: imgt1, category: 'BRANDING', projectName: 'Branding Project 2', githubLink: 'https://github.com' },
     { id: 5, image: imgt1, category: 'UI DESIGN', projectName: 'UI Design Project', githubLink: 'https://github.com' }
