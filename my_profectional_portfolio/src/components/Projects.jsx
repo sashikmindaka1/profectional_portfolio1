@@ -5,6 +5,7 @@ import imgGit from '../assests/images.png';
 import imgt3 from '../assests/Untitled design (6).jpg'; 
 import imgt2 from '../assests/Untitled design (7).jpg'; 
 import imgt4 from '../assests/Untitled design (9).jpg';
+import imgt5 from '../assests/myAi1.png';
 
 // 1. Dot-style ChooseOption Component
 const ChooseOption = ({ activeTab, setActiveTab }) => {
@@ -68,6 +69,14 @@ export default function Projects() {
       image: imgt4, 
       category: ['WEBSITE'], 
       projectName: 'My portfolio', 
+      githubLink: 'https://github.com/sashikmindaka1/profectional_portfolio1', 
+      liveLink: 'https://www.sashikmindaka.dev/' 
+    },
+    { 
+      id: 5, 
+      image: imgt5, 
+      category: ['WEB APPLICATION'], 
+      projectName: 'Lucy AI', 
       githubLink: 'https://github.com/sashikmindaka1/profectional_portfolio1', 
       liveLink: 'https://www.sashikmindaka.dev/' 
     },
