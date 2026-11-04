@@ -78,7 +78,7 @@ export default function Projects() {
       category: ['WEB APPLICATION'], 
       projectName: 'Lucy AI', 
       githubLink: 'https://github.com/sashikmindaka1/profectional_portfolio1', 
-      liveLink: 'https://www.sashikmindaka.dev/' 
+      liveLink: 'https://my-ai-amber.vercel.app/' 
     },
   ];
 
